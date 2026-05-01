@@ -13,10 +13,6 @@ You must deliver software capable of:
 - Framework: LangChain
 - Database: PostgreSQL + pgVector
 - Docker & Docker Compose
-### Required project structure
-
-├── docker-compose.yml
-├── requirements.txt      #Dependencies
 
 
 ## Project setup and execution
