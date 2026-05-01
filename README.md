@@ -16,14 +16,7 @@ You must deliver software capable of:
 ### Required project structure
 
 ├── docker-compose.yml
-├── requirements.txt      #Dependencies
-├── .env.example          # OPENAI_API_KEY variable template
-├── src/
-│   ├── ingest.py         # PDF ingestion script
-│   ├── search.py         # Search script
-│   ├── chat.py           # CLI for user interaction
-├── document.pdf          # PDF for ingestion
-└── README.md             # Execution instructions
+
 
 
 ## Project setup and execution
