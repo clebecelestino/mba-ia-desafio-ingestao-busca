@@ -15,6 +15,7 @@ You must deliver software capable of:
 - Docker & Docker Compose
   
 ### Required project structure
+`
 ├── docker-compose.yml
 ├── requirements.txt      #Dependencies
 ├── .env.example          # OPENAI_API_KEY variable template
@@ -24,6 +25,7 @@ You must deliver software capable of:
 │   ├── chat.py           # CLI for user interaction
 ├── document.pdf          # PDF for ingestion
 └── README.md             # Execution instructions
+`
 
 ## Project setup and execution
 ### VirtualEnv for Python
