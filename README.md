@@ -26,8 +26,9 @@ source venv/bin/activate `
 
 ### Execution order
 1. Create the database: docker compose up -d
-2. Execute PDF ingestion: python src/ingest.py
-3. Run the chat: python src/chat.py
+2. Install the libraries: pip install -r requirements.txt
+3. Execute PDF ingestion: python src/ingest.py
+4. Run the chat: python src/chat.py
 
 ## System requirement
 1. PDF ingestion
