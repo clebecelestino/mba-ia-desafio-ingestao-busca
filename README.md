@@ -24,6 +24,19 @@ You must deliver software capable of:
 │   ├── chat.py     # CLI for user interaction
 ├── document.pdf    # PDF for ingestion
 └── README.md       # Execution instructions
+## New Project Structure
+src/
+├── config/settings.py
+├── models/
+│   ├── produto_model.py
+│   └── usuario_model.py
+├── views/
+│   └── routes.py
+├── controllers/
+│   ├── produto_controller.py
+│   └── pedido_controller.py
+├── middlewares/error_handler.py
+└── app.py (composition root)
 
 ## Project setup and execution
 ### VirtualEnv for Python
