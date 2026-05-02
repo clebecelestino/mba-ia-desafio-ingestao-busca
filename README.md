@@ -16,14 +16,14 @@ You must deliver software capable of:
   
 ### Required project structure
 ├── docker-compose.yml
-├── requirements.txt      #Dependencies
-├── .env.example          # OPENAI_API_KEY variable template
+├── requirements.txt   #Dependencies
+├── .env.example       # OPENAI_API_KEY variable template
 ├── src/
-│   ├── ingest.py         # PDF ingestion script
-│   ├── search.py         # Search script
-│   ├── chat.py           # CLI for user interaction
-├── document.pdf          # PDF for ingestion
-└── README.md             # Execution instructions
+│   ├── ingest.py   # PDF ingestion script
+│   ├── search.py   # Search script
+│   ├── chat.py     # CLI for user interaction
+├── document.pdf    # PDF for ingestion
+└── README.md       # Execution instructions
 
 ## Project setup and execution
 ### VirtualEnv for Python
@@ -36,8 +36,9 @@ source venv/bin/activate `
 
 ### Execution order
 1. Create the database: docker compose up -d
-2. Execute PDF ingestion: python src/ingest.py
-3. Run the chat: python src/chat.py
+2. Install the libraries: pip install -r requirements.txt
+3. Execute PDF ingestion: python src/ingest.py
+4. Run the chat: python src/chat.py
 
 ## System requirement
 1. PDF ingestion

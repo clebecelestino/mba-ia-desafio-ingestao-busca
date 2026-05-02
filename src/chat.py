@@ -4,7 +4,7 @@ from langchain_openai import ChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 def main():
-    question = 'Qual o Faturamento da empresa Alfa Agronegócio Indústria ?'
+    question = 'Qual o faturamento da Empresa SuperTechIABrazil?'
     chain = search_prompt(question)
     if not chain:
         print("Não foi possível iniciar o chat. Verifique os erros de inicialização.")
@@ -14,8 +14,8 @@ def main():
 
     chat_prompt = ChatPromptTemplate([system, user])
     messages = chat_prompt.format_messages(contexto=chain, question=question)
-    for msg in messages:
-        print(f"{msg.type}: {msg.content}")
+    #for msg in messages:
+    #    print(f"{msg.type}: {msg.content}")
     #model = ChatOpenAI(model="gpt-5-mini", temperature=0.5)
     model = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite",temperature=0.5)
     result = model.invoke(messages)
